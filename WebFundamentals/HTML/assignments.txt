@@ -1,0 +1,120 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Allen>cd desktop
+
+C:\Users\Allen\Desktop>md DojoAssignments
+
+C:\Users\Allen\Desktop>md dojoassignments
+A subdirectory or file dojoassignments already exists.
+
+C:\Users\Allen\Desktop>cd dojoassignments
+
+C:\Users\Allen\Desktop\DojoAssignments>md WebFundamentals
+
+C:\Users\Allen\Desktop\DojoAssignments>md Python
+
+C:\Users\Allen\Desktop\DojoAssignments>md MEAN
+
+C:\Users\Allen\Desktop\DojoAssignments>md Ruby
+
+C:\Users\Allen\Desktop\DojoAssignments>md iOS
+
+C:\Users\Allen\Desktop\DojoAssignments>md netCore
+
+C:\Users\Allen\Desktop\DojoAssignments>cd webfundamentals
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals>copy nul about.txt
+        1 file(s) copied.
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals>cd..
+
+C:\Users\Allen\Desktop\DojoAssignments>cd python
+
+C:\Users\Allen\Desktop\DojoAssignments\Python>copy nul about.txt
+        1 file(s) copied.
+
+C:\Users\Allen\Desktop\DojoAssignments\Python>cd..
+
+C:\Users\Allen\Desktop\DojoAssignments>cd mean
+
+C:\Users\Allen\Desktop\DojoAssignments\MEAN>copy nul about.txt
+        1 file(s) copied.
+
+C:\Users\Allen\Desktop\DojoAssignments\MEAN>cd..
+
+C:\Users\Allen\Desktop\DojoAssignments>cd ruby
+
+C:\Users\Allen\Desktop\DojoAssignments\Ruby>copy nul about.txt
+        1 file(s) copied.
+
+C:\Users\Allen\Desktop\DojoAssignments\Ruby>cd..
+
+C:\Users\Allen\Desktop\DojoAssignments>cd ios
+
+C:\Users\Allen\Desktop\DojoAssignments\iOS>copy nul about.txt
+        1 file(s) copied.
+
+C:\Users\Allen\Desktop\DojoAssignments\iOS>cd..
+
+C:\Users\Allen\Desktop\DojoAssignments>cd netcore
+
+C:\Users\Allen\Desktop\DojoAssignments\netCore>copy nul about.txt
+        1 file(s) copied.
+
+C:\Users\Allen\Desktop\DojoAssignments\netCore>cd..
+
+C:\Users\Allen\Desktop\DojoAssignments>cd webfundementals
+The system cannot find the path specified.
+
+C:\Users\Allen\Desktop\DojoAssignments>cd webfundamentals
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals>md Git
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals>md HTML
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals>md CSS
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals>md Javascript
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals>cd git
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\Git>copy nul about.txt
+        1 file(s) copied.
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\Git>cd..
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals>cd html
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\HTML>copy nul about.txt
+        1 file(s) copied.
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\HTML>cd..
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals>cd css
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\CSS>copy nul about.txt
+        1 file(s) copied.
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\CSS>cd..
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals>cd javascript
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\Javascript>copy nul about.txt
+        1 file(s) copied.
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\Javascript>cd..
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals>cd html
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\HTML>copy nul indentation.html
+        1 file(s) copied.
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\HTML>dir /b /s
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\HTML\about.txt
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\HTML\indentation.html
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\HTML>copy nul assignments.txt
+        1 file(s) copied.
+
+C:\Users\Allen\Desktop\DojoAssignments\WebFundamentals\HTML>
