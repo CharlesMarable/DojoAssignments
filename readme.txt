@@ -1,0 +1,1 @@
+This folder is for Coding Dojo assignments.
