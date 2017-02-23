@@ -1,0 +1,22 @@
+create DojoAssignments on GitHub
+open CP
+cd desktop
+cd dojoassignments
+init git
+In Git Bash
+git add iOS
+git add MEAN
+git add netCore
+git add Python
+git add Ruby
+git add WebFundamentals
+git add readme.txt
+get commit -m "added repository for DojoAssignements"
+pushed to GitHub
+In CP
+copy nul readme.txt
+in readme explain the content
+git status
+git add readme.txt
+git commit -m "added readme.txt explaining purpose"
+git push
