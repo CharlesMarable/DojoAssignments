@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Junk</title>
+      	<meta charset="UTF-8">
+      	<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      	<script type="text/javascript">
+      		$(document).ready(function(){
+				$('img').click(function(){
+					var temp = $(this).attr("catstuff");
+					var temp2 = $(this).attr("src")
+					$(this).attr("src", temp);
+					$(this).attr("catstuff", temp2);
+
+				});
+
+			});	
+		</script>
+	</head>
+			<img src="ninja0.png" catstuff="cat2.png" width="300" height="200">
+			<img src="cat2.png">
+	<body>
+	</body>
+</html>

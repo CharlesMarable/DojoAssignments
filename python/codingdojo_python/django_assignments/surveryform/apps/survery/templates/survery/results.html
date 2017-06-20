@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+</head>
+<body>
+	{% csrf_token %}
+	<h3>Submitted Information</h3>
+	<p>Name: {{ request.session.name }}</p>
+	<p>Dojo Location: {{ request.session.location }}</p>
+	<p>Favorite Language: {{ request.session.language }}</p>
+	<p>Comment: {{ request.session.comment }}</p>
+</body>
+</html>

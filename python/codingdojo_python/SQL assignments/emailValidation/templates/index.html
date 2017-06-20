@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>email validation</title>
+</head>
+<body>
+	<form action='/' method='POST'>
+		Email Address:<input type="email" name="email">
+		<input type="submit" name="submit" value="Add">	
+	</form>
+	{% for user in all_users: %}
+   <p>ID: {{ user['id'] }}</p>
+   <p>Email: {{ user['email'] }}</p>
+   <p>{{user['created_at']}}</p>
+
+   <hr>
+	{% endfor %}
+</body>
+</html>

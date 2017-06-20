@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Semi Routes</title>
+</head>
+<body>
+	<div>
+		<h1>Products</h1>
+	</div>
+	<div>
+		<table>
+			<tr>
+				<th>Name: </th>
+				<th>Description: </th>
+				<th>Price: </th>
+				<th>Actions: </th>
+			</tr>
+			{% for product in products %}	
+			<tr>	
+				<td>{{ product.name }}</td>
+				<td>{{ product.description }}</td>
+				<td>{{ product.price }}</td>
+				<td>
+					<a href="{% url 'semi:show' id=product.id %}">Show</a>
+					<a href="{% url 'semi:edit' id=product.id %}">Edit</a>
+					<form action="{% url 'semi:destory' id=product.id %}" method='POST'>
+						{% csrf_token %}
+						<input type="submit" name="" value="Remove">
+					</form>
+				</td>
+			</tr>
+			{% endfor %}
+
+		</table>
+	</div>
+	<div>
+		<a href="{% url 'semi:new' %}">Add a new product</a>
+	</div>
+
+</body>
+</html>

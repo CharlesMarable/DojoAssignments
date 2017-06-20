@@ -1,0 +1,27 @@
+Pip install Django -
+	collecting Django
+	Downloading Django
+	Installing collected packages: Django
+	Successfully installed Django
+
+Pip list - 
+	DEPRECATION: The default format will switch to columns in the future. I think it just lists the functionalities in python.
+
+Pip install Django -
+	the requirement is already satisfied.
+
+pip freeze -
+	freezes the functionalities of python. So things like Django and Flask no longer work.
+
+Pip freeze > requirments.txt - 
+	i see a number of files and programs in different colors.
+
+Pip show Django -
+	Shows the version of Django and what it does.
+
+Pip uninstall Django -
+	It just uninstalls Django.
+
+pip search Flask -
+	Gos through Flask and explains what each thing is.
+	

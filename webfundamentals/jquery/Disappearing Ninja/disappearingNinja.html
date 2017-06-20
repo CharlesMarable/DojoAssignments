@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Disappearing Ninja</title>
+      	<meta charset="UTF-8">
+      	<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      	<script type="text/javascript">
+      		$(document).ready(function(){
+				$("#pic1").click(function(){
+ 				 	$("#pic1").hide();
+				});
+				$("#pic2").click(function(){
+ 				 	$("#pic2").hide();
+				});
+				$("#pic3").click(function(){
+ 				 	$("#pic3").hide();
+				});
+				$("#pic4").click(function(){
+ 				 	$("#pic4").hide();
+				});
+				$("#pic5").click(function(){
+ 				 	$("#pic5").hide();
+				});
+				$("#pic6").click(function(){
+ 				 	$("#pic6").hide();
+				});
+				$("#pic7").click(function(){
+ 				 	$("#pic7").hide();
+				});
+				$("#pic8").click(function(){
+ 				 	$("#pic8").hide();
+				});
+				$("button").click(function(){
+ 				 	$("img").show(this);
+				});
+			});	
+		</script>
+	</head>
+		<h1 id="header">JQuery - assignment 1</p>
+		<div class="box">
+			<img src="ninja.png" id="pic1" class="size" />
+		</div>
+		<div class="box">
+			<img src="ninja.png" id="pic2" class="size" />
+		</div>
+		<div class="box">
+			<img src="ninja.png" id="pic3" class="size" />
+		</div>
+		<div class="box">
+			<img src="ninja.png" id="pic4" class="size" />
+		</div>
+		<div class="box">
+			<img src="ninja.png" id="pic5" class="size" />
+		</div>
+		<div class="box">
+			<img src="ninja.png" id="pic6" class="size" />
+		</div>
+		<div class="box">
+			<img src="ninja.png" id="pic7" class="size" />
+		</div>
+		<div class="box">
+			<img src="ninja.png" id="pic8" class="size" />
+		</div>
+		<button>Restore All</button>
+	<p></p>
+	<body>
+	</body>
+</html>

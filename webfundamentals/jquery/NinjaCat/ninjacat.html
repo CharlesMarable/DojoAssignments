@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Disappearing Ninja</title>
+      	<meta charset="UTF-8">
+      	<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      	<script type="text/javascript">
+      		$(document).ready(function(){
+				$('img').click(function(){
+  					var temp = $(this).attr("data-alt-src");
+  					var temp2 = $(this).attr("src");
+  					$(this).attr("src", temp);
+  					$(this).attr("data-alt-src", temp2);
+
+				});
+
+			});	
+		</script>
+	</head>
+		<div>
+			<img src="cat0.png" data-alt-src="ninja0.png" id="main">
+
+		</div>
+		<div>
+			<img src="cat1.png" data-alt-src="ninja1.png" id="main">
+		</div>
+		<div>
+			<img src="cat2.png" data-alt-src="ninja2.png" id="main">
+		</div>
+		<div>
+			<img src="cat3.png" data-alt-src="ninja3.png" id="main">
+		</div>
+		<div>
+			<img src="cat4.png" data-alt-src="ninja4.png" id="main">
+		</div>
+	<p></p>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DojoArena</title>
+	<meta charset="UTF-8">
+      	<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      	<script type="text/javascript">
+		 $(document).ready(function(){
+
+	 		$('#selectplayer').hide();
+
+		 	$('.arena').hover(function(){
+	  			var imgname = $(this).text();
+	   			console.log(imgname);
+	   			$('body').css('background-image', 'url('+ imgname +'.jpg)');
+	 			}, function() {
+	   			$('body').css('background-image', 'none');
+	 			});
+				
+			$('.arena').click(function(){
+	  			var imgname = $(this).text();
+	   			console.log(imgname);
+	   			$('body').css('background-image', 'url('+ imgname +'.jpg)');
+	 			$('#arenabody').remove();
+				$('#selectplayer').show();
+		 	});
+
+
+		 	});
+		 	$(function() {
+   				$("#players_1").change(function() {
+       			var imgname = $(this).val();
+        		console.log(imgname);
+            	$('#img1').attr('src', imgname + '.png');
+   			});
+   			});
+
+   			$(function() {
+   			$("#players_2").change(function() {
+       		var imgname = $(this).val();
+        	console.log(imgname);
+            $('#img2').attr('src', imgname + '.png');
+   			});
+
+		 });
+
+		</script>
+</head>
+<body>
+	<div id=arenabody>
+		<h2>Select Arena</h2>
+		<button id="beach" class="arena">beach</button>
+		<button id="planet" class="arena">planet</button>
+		<button id="dojo" class="arena">dojo</button>
+		<button id="forest" class="arena">forest</button>
+		<button id="matrix" class="arena">matrix</button>
+		<button id="snow" class="arena">snow</button>
+	</div>
+	<div id="selectplayer">
+		<h1>Select Players</h1>
+	     <select id="players_1">
+	       <option class="character">Donny</option>
+	       <option class="character">Leo</option>
+	       <option class="character">Mikey</option>
+	       <option class="character">Raphael</option>
+	     </select>
+	     <select id="players_2">
+	       <option class="character">Donny</option>
+	       <option class="character">Leo</option>
+	       <option class="character">Mikey</option>
+	       <option class="character">Raphael</option>
+	     </select>
+	     <img id="img1">
+	     <img id="img2">
+	</div>
+</body>
+</html>

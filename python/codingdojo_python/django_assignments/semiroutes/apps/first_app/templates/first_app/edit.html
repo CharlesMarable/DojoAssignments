@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit</title>
+</head>
+<body>
+	<h1>Edit Product {{ product.id }}</h1>
+	<div>
+		<form action='{% url "semi:update" id=product.id %}' method='POST'>
+			{% csrf_token %}
+			<p>Name: <input type="text" name="name" value="{{product.name}}"></p>
+			<p>Description: <input type="text" name="description" value="{{product.description}}"></p>
+			<p>Price: <input type="text" name="price" value="{{product.price}}"></p>
+			<input type="submit" name="" value="Update">
+		</form>
+	</div>
+	<div>
+		<a href="{% url 'semi:show' id=product.id %}">Show</a>
+		<a href="{% url 'semi:index' %}">Back</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Reviews</title>
+    </head>
+    <body>
+        <h1>This is the Reviews Page!</h1>
+        @{
+            foreach (var revi in ViewBag.AllReviews){
+                <p>Review for: @revi.Restaurant</p>
+                <p>Reviewer: @revi.Reviewer</p>
+                <p>@revi.Stars Stars</p>
+                <p>@revi.Review</p>
+                <hr>
+            }
+        }
+        <a href="/"><button>Write a new review</button></a>
+    </body>
+</html>

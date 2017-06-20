@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Full Friends</title>
+</head>
+<body>
+	<div>
+		<h1>All friends</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Added</th>
+					<th>Edit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>{{ friend.first_name}} {{ friend.last_name}}</td>
+					<td>{{ friend.email }}</td>
+					<td>{{ friend.created_at }}</td>
+					<td><a href="/friends/{{ friend.id }}/show">Show</a></td>
+				</tr>
+			<a href="/friends/new">Add friend</a>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+<head>
+
+</head>
+
+<html>
+    <body>
+        <h2>Welcome: @ViewBag.curruser.firstname @ViewBag.curruser.lastname</h2>
+
+        <form action="process" method="post">
+            <div class="form-group">
+                <lable for="action">Deposit/Withdrawl: </lable>
+                <input type="text" name="action" id="action" value="">
+            </div>
+            <input type="submit" class="btn btn-default" name="submit" value="Submit">
+        </form>
+       
+        @TempData["error"]
+       
+        <p>Current Balance: $@ViewBag.curruser.balance</p>
+
+        <table width="60%"> 
+            <thead>
+                <tr>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach(var trans in ViewBag.alltrans)
+                    {
+                        DateTime tdate = trans.tcreatedAt;
+                        string trdate = tdate.ToString("MMMM dd, yyyy");
+                        //If there are any errors for a field...
+                        if(@ViewBag.alltrans != null)
+                        {
+                            
+                            <tr>
+                                <td>$@trans.action</td>
+                                <td>@trdate</td>
+                            </tr>
+                        }
+                    }
+                }
+            </tbody>
+
+        </table>
+        <a href="logout">Logout</a>
+    </body>
+</html>
