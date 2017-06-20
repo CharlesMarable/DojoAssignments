@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Wedding Planner Dashboard</title>
+    </head>
+    <body>
+        <h1>Welcome to Wedding Planner, @ViewBag.InSession.FirstName!</h1>  
+        <a href="/Logout", "LogReg"><button>Logout</button></a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Wedding</th>
+                    <th>Date</th>
+                    <th>Guests</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var wed in ViewBag.AllWeddings){
+                        
+                        DateTime wdate = wed.WDate;
+                        string betterdate = wdate.ToString("MMMM dd yyyy");
+                        <tr>
+                            <td><a href="Show/@wed.WeddingId">@wed.WedderOne & @wed.WedderTwo</a></td>
+                            <td>@betterdate</td>
+                            <td>@wed.Guests.Count</td>
+                        
+                            @{
+                                if (@ViewBag.InSession == @wed.Creator){
+                                    <td><a href="Delete/@wed.WeddingId">Delete</a></td>                             
+                                } else if (@wed.Guests.Count == 0){
+                                    <td><a href="AddGuest/@wed.WeddingId">RSVP</a></td>
+                                } else {
+                                    bool Attending = false;
+                                    foreach (var guest in @wed.Guests){
+                                        if (@ViewBag.Insession.UserId == @guest.UserId){
+                                            Attending = true;
+                                        }
+                                    } <!-- end of foreach2 -->
+                                    if (Attending){
+                                        <td><a href="RemoveGuest/@wed.WeddingId">Un-RSVP</a></td>
+                                    } else {
+                                        <td><a href="AddGuest/@wed.WeddingId">RSVP</a></td>
+                                    }
+                                }  
+                            }    
+                        </tr>
+                    }<!-- end of foreach1 -->
+                }     
+            </tbody>
+        </table>  
+        <a href="/New"><button>New Wedding</button></a>     
+    </body>
+</html>

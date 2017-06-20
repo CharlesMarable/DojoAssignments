@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mongoose Dash</title>
+</head>
+<body>
+	<h1>Mongoose!</h1>
+	<% for (var i in mongoose){ %>
+		<h3>Mongoose: <a href="/mongooses/<%= mongoose[i]._id %>"><%= mongoose[i].name %></a><form action="/delete/<%= mongoose[i]._id %>" method="post"><input type="submit" name="" value="Delete"></form></h3>
+	<% } %>
+	<a href="/mongooses/add">Add a mongoose!</a>
+</body>
+</html>

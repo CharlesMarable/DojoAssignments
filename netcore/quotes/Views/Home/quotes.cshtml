@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "List of quotes";
+}
+<html>
+<h1>Here are the awesome quotes!</h1>
+<div>
+    @{
+        foreach(var user in ViewBag.Quotes){
+            ViewBag.name = user["name"];
+            ViewBag.quote = user["quote"];
+            ViewBag.created = user["created_at"];
+            <p>@ViewBag.quote</p>
+            <p>@ViewBag.name @ViewBag.created</p>
+            <hr>
+        }
+    }
+</div>
+</html>

@@ -1,0 +1,18 @@
+<p>
+  registration works!
+</p>
+<form (submit)="onSubmit(form)" #form="ngForm">
+	First Name: <input type="text" name="fname"  [(ngModel)]="registration.fname">
+	<br>
+	Last Name: <input type="text" name="lname" [(ngModel)]="registration.lname">
+	<br>
+	Email: <input type="text" name="email" [(ngModel)]="registration.email">
+	<br>
+	Password:<input type="password" name="password" [(ngModel)]="registration.password">
+	<br>
+	Re-enter Password: <input type="password" name="passwordConf" [(ngModel)]="registration.passwordConf">
+	<br>
+	State: <input type="text" name="state" [(ngModel)]="registration.state">
+	<br>
+	<input type="submit" name="" value="Submit">
+</form>

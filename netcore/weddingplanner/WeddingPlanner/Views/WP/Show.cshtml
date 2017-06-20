@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Wedding Page</title>
+    </head>
+    <body>
+        @{
+            
+            DateTime wdate = @ViewBag.ThisWedding.WDate;
+            string betterdate = wdate.ToString("MMMM dd yyyy");
+            <h1>@ViewBag.ThisWedding.WedderOne & @ViewBag.ThisWedding.WedderTwo's Wedding</h1>  
+            <a href="/Logout", "LogReg"><button>Logout</button></a>
+            <a href="/Dashboard"><button>Dashboard</button></a>
+            <br>
+            <h2>Date: @betterdate</h2>
+            <h3>Guests:</h3>
+            if (ViewBag.ThisWedding.Guests.Count > 0){
+                foreach (var guest in ViewBag.ThisWedding.Guests){
+                <p>@guest.User.FirstName @guest.User.LastName</p>
+                }
+            } else {
+                <p>No one has RSVP'ed for this wedding yet</p>
+            }
+         }    
+    </body>
+</html>

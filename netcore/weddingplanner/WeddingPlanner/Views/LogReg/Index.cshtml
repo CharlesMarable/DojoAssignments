@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Wedding Planner Registration and Login</title>
+    </head>
+    <body>
+        <div>
+            <!--<p>@TempData["warning"]</p>-->
+            <p>@TempData["error"]</p>
+            @{
+                foreach(var error in ViewBag.errors)
+                {
+                    //If there are any errors for a field...
+                    if(@error.Errors.Count > 0)
+                    {
+                        // We show the first error for that field
+                        <p>@error.Errors[0].ErrorMessage</p>
+                    }
+                }
+            }
+        </div>
+        <div>
+            <h2>Registration</h2>
+            <form action="Register" method="post">
+                First Name: <input type="text" name="FirstName">
+                <br>
+                Last Name: <input type="text" name="LastName">
+                <br>
+                Email Address: <input type="text" name="Email">
+                <br>
+                Password: <input type="password" name="Password">
+                <br>
+                Password Confirmation: <input type="password" name="PasswordConfirmation">
+                <br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+
+        <div>
+            <h2>Login</h2>
+            <form action="Login" method="post">
+                Email Address: <input type="text" name="Email" value="banjodeedlee@yahoo.com">
+                <br>
+                Password: <input type="password" name="Password" value="password">
+                <br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </body>
+</html>

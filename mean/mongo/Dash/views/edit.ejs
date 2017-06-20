@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit</title>
+</head>
+<body>
+<h1>Edit this Mongoose!</h1>
+<form action="/edit/<%= mongoose._id %>" method="post">
+	<p>Name: <input type="text" name="name" value="<%= mongoose.name %>"></p>
+	<input type="submit" name="" value="edit">
+</form>
+</body>
+</html>
